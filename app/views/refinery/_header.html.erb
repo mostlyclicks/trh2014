@@ -1,0 +1,31 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+    <h1 id='logo'>
+        <%= image_tag 'logo3.png' %>
+        <%#= link_to Refinery::Core.site_name, refinery.root_path %>
+      </h1>
+    </div>
+    <div class="col-md-8 text-right">
+      <p>
+      <h3><i class="fa fa-phone-square"></i> 309-762-5295<br />
+      <i class="fa fa-envelope"></i> <%= mail_to "info@thunderroadhobbies.com", 'info@thunderroadhobbies.com' %></h3>
+      <%= link_to (raw("6411 61st Street (Off Airport Road<br />
+                          Moline, Illinois 61265")),
+                    "/location" %>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="nav-section">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12"><%= main_nav_nobg.to_html %></div>
+  </div>
+</div>
+</div>
+
+
+<%#= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>

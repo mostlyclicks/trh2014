@@ -1,1 +1,31 @@
+@import 'variables.css.scss';
 /* custom styles */
+#header {
+  background-image:url('trackpano1.jpg');
+  background-repeat:no-repeat;
+  background-position-x:50%;
+  background-position-y:50%;
+  color:$white;
+  h3, p {
+    text-shadow:1px 1px 1px rgba(0,0,0,.7);
+  }
+  a {
+    color:$white;
+  }
+}
+
+#nav-section {
+  border-top:1px solid $trans-white;
+  @extend .black-gradient;
+  box-shadow:1px 1px 4px $trans-black;
+  text-transform:uppercase;
+  font-family:$deco-font;
+  font-size:25px;
+  a {
+    color:$trans-white-7;
+    &:hover{
+      color:$white;
+      }
+    }
+
+}
