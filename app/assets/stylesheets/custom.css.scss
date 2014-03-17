@@ -1,11 +1,15 @@
 @import 'variables.css.scss';
 /* custom styles */
+h1, h2 {
+  font-family: $deco-font;
+}
 #header {
   background-image:url('trackpano1.jpg');
   background-repeat:no-repeat;
   background-position-x:50%;
   background-position-y:50%;
   color:$white;
+
   h3, p {
     text-shadow:1px 1px 1px rgba(0,0,0,.7);
   }
