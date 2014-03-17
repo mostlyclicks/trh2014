@@ -13,10 +13,25 @@
         <%= render "/refinery/header" -%>
       </header>
 
-      <div class="row">
-        <div class=""></div>
+      <div class="container">
+        <div class="row" id="main-content">
+          <div class="col-md-2" id="left-sidebar">
+            <%= copywriting_options({:scope => 'left_sidebar', :phrase_type => 'wysiwyg'}) do %>
+              <%= copywriting('hours', {:phrase_type => 'wysiwyg'}).html_safe %>
+              <%= copywriting('links', {:phrase_type => 'wysiwyg'}).html_safe %>
+            <% end %>
+          </div>
+          <div class="col-md-6">
+            <%= yield %>
+          </div>
+          <div class="col-md-3">
+
+          </div>
+
+        </div>
+
       </div>
-        <%= yield %>
+        
      
       <footer>
         <%= render "/refinery/footer" -%>

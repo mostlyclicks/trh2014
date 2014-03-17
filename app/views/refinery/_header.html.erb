@@ -8,13 +8,11 @@
       </h1>
     </div>
     <div class="col-md-8 text-right">
-      <p>
-      <h3><i class="fa fa-phone-square"></i> 309-762-5295<br />
-      <i class="fa fa-envelope"></i> <%= mail_to "info@thunderroadhobbies.com", 'info@thunderroadhobbies.com' %></h3>
-      <%= link_to (raw("6411 61st Street (Off Airport Road<br />
-                          Moline, Illinois 61265")),
-                    "/location" %>
-      </p>
+      <%= copywriting_options({:scope => 'header', :phrase_type => 'wysiwyg'}) do %>
+        <h3><i class="fa fa-phone-square"></i> <%= copywriting('phone number', {:phrase_type => 'string', :default => '309-762-5295'}) %></h3>
+        <h3><i class="fa fa-envelope"></i> <%= copywriting('email', {:phrase_type => 'wysiwyg'}).html_safe %></h3>
+        <p><%= copywriting('address', {:phrase_type => 'wysiwyg'}).html_safe %></p>
+      <% end %>
     </div>
   </div>
 </div>
@@ -27,5 +25,3 @@
 </div>
 </div>
 
-
-<%#= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
