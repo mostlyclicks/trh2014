@@ -3,7 +3,14 @@ $white:#ffffff;
 $trans-white:rgba(255,255,255,.5);
 $trans-white-7:rgba(255,255,255,.7);
 $trans-black:rgba(0,0,0,.7);
+$trans-black-1:rgba(0,0,0,.1);
 $deco-font:'Bangers', cursive;
+
+@mixin trans-black-border($transparency) {
+  border:1px solid rgba(0,0,0, $transparency);
+}
+
+
 
 .black-gradient {
 background: #545454; /* Old browsers */

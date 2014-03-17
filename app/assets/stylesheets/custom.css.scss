@@ -45,3 +45,14 @@ h1, h2 {
 
 }
 
+
+
+#footer {
+  margin-top:40px;
+  padding:20px;
+  background-color:rgba(0,0,0,.05);
+  min-height:15vh;
+  @include trans-black-border(.1);
+  color:$trans-black;
+}
+
