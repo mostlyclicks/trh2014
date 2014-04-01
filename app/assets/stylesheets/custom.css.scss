@@ -18,6 +18,8 @@ h1, h2 {
   }
 }
 
+
+
 #nav-section {
   border-top:1px solid $trans-white;
   @extend .black-gradient;
@@ -36,6 +38,13 @@ h1, h2 {
 
 #main-content {
   margin-top:20px;
+}
+
+#home-buckets {
+  h2 {
+    margin-top:0px;
+  }
+  
 }
 
 #left-sidebar {
