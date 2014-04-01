@@ -67,4 +67,5 @@ Trh01::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
   config.s3_backend=true
+  config.assets.precompile += %w( modernizr.js respond.js respond-proxy.html respond.proxy.js )
 end
