@@ -5,22 +5,30 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  // body {
-  //   border:3px solid red;
-  // }
+   // body {
+   //   border:3px solid red;
+   // }
+
+   #logo {
+    margin-top:20px;
+   }
+
+   #header-contact h3#phone, #header-contact h3#email, #header-contact p {
+  text-align:right;
+}
 
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  // body {
-  //   border:3px solid blue;
-  // }
+   // body {
+   //   border:3px solid blue;
+   // }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-//   body {
-//     border:3px solid yellow;
-//   }
+   // body {
+   //   border:3px solid yellow;
+   // }
 }

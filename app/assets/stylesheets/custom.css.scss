@@ -18,6 +18,22 @@ h1, h2 {
   }
 }
 
+#logo {
+  margin-top:75px;
+}
+
+#header-contact h3#phone, #header-contact h3#email, #header-contact p {
+  text-align:center;
+}
+
+h3#email {
+  font-size:18px;
+}
+
+h3#phone {
+  font-size:28px;
+}
+
 
 
 #nav-section {
@@ -27,6 +43,8 @@ h1, h2 {
   text-transform:uppercase;
   font-family:$deco-font;
   font-size:25px;
+  border:1px solid red;
+  
   a {
     color:$trans-white-7;
     &:hover{
