@@ -9,13 +9,20 @@
    //   border:3px solid red;
    // }
 
-   #logo {
+  #logo {
     margin-top:20px;
-   }
+  }
 
-   #header-contact h3#phone, #header-contact h3#email, #header-contact p {
-  text-align:right;
-}
+  #header-contact h3#phone, #header-contact h3#email, #header-contact p {
+    text-align:right;
+  }
+
+  #nav-section {
+    ul {
+      -webkit-margin-before: 0em !important;
+
+    }
+  }
 
 }
 
